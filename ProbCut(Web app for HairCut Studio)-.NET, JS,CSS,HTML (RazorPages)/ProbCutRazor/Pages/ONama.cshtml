@@ -1,0 +1,118 @@
+﻿@page
+@using ProbCut.Models;
+@model ProbCut.Pages.ONamaModel
+@{
+    ViewData["Title"] = LanguageController.Get(Model.lang, "AboutUs", "Title");
+}
+
+<link rel="stylesheet" href="~/css/ONama.css" asp-append-version="true" />
+
+<body id="bodyAboutUs">
+    <br /><br />
+    <div class="text-center">
+        <h1 style="font-family: Ubuntu Mono;">@LanguageController.Get(Model.lang, "Index", "HeadingWhoAreWe")</h1>
+    </div>
+    <br />
+    <div style="display: flex; justify-content: center; text-align: center;">
+        <p id="paragraphAboutUs" class="lead">
+            @LanguageController.Get(Model.lang, "Index", "WhoAreWeDescription")
+        </p>
+    </div>
+    <br />
+
+    <!-- 3 cards -->
+    <div id="cardAboutUs">
+        <div class="card cardAboutUs">
+            <img src="~/lib/custom/avatar_Petar.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Petar</h5>
+                <p class="card-text">Back-end developer</p>
+            </div>
+        </div>
+
+        <div class="card cardAboutUs">
+            <img src="~/lib/custom/avatar_Dusan.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Dušan</h5>
+                <p class="card-text">Front-end developer</p>
+            </div>
+        </div>
+
+        <div class="card cardAboutUs">
+            <img src="~/lib/custom/avatar_Filip.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Filip</h5>
+                <p class="card-text">@LanguageController.Get(Model.lang, "AboutUs", "FilipTitle")</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="AboutUsSection2" class="text-center">
+        <h1 style="font-family: Ubuntu Mono;">@LanguageController.Get(Model.lang, "AboutUs", "HeadingWhyProbcut")</h1>
+    </div>
+
+    <br />
+
+    <div style="display: flex; justify-content: center; text-align: center; flex-direction: column;">
+        <p class="lead">
+            @LanguageController.Get(Model.lang, "AboutUs", "WhyProbcutDescription1") <br />
+        <p class="lead" id="paragraphAboutUsHidden">@LanguageController.Get(Model.lang, "AboutUs", "WhyProbcutDescription2")</p>
+        </p>
+    </div>
+
+    <!-- counters -->
+    <div id="scrolled2" style="display: flex; flex-direction: row; justify-content: space-evenly; text-align: center; font-family: Ubuntu Mono;">
+
+        <div class="countersAboutUs">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <h1 class="card-title" id="counterFrizeri"></h1>
+                <h5 class="card-title" id="counterFrizeriLabel">@LanguageController.Get(Model.lang, "Index", "CounterLabelBarbers")</h5>
+            </div>
+        </div>
+
+        <div class="countersAboutUs">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <h1 class="card-title" id="counterMusterije"></h1>
+                <h5 class="card-title" id="counterMusterijeLabel">@LanguageController.Get(Model.lang, "Index", "CounterLabelCustomers")</h5>
+            </div>
+        </div>
+
+        <div class="countersAboutUs">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <h1 class="card-title" id="counterTermini"></h1>
+                <h5 class="card-title" id="counterTerminiLabel">@LanguageController.Get(Model.lang, "Index", "CounterLabelAppointments1")<br />@LanguageController.Get(Model.lang, "Index", "CounterLabelAppointments2")</h5>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <div class="chart-container" id="chartContainer">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+    <div class="text-center" id="AboutUsSection3">
+        <h1 style="font-family: Ubuntu Mono;">@LanguageController.Get(Model.lang, "Index", "ContactUsLabel")</h1>
+    </div>
+    <br />
+    <div id="mapDisplay">
+        <div id="mapAboutUs" class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d725.6487184742932!2d21.905609043385912!3d43.3227395483263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b0c7ffa0e9f5%3A0x8ec484b1e0918653!2z0JzQvtGYINGB0LDQu9C-0L0!5e0!3m2!1sen!2srs!4v1586879380998!5m2!1sen!2srs"></iframe>
+        </div>
+    </div>
+    <br />
+
+    <div style="display: flex; justify-content: center;">
+        <div id="contactUsTextDivAboutUs">
+            <p class="lead" id="contactUsText" style="line-height: 1.8">
+                @LanguageController.Get(Model.lang, "Index", "ContactUsAddress") <i>Ćirila i Metodija 26, Niš 18105</i> <br />
+                Email: <i>info@probcutapp.rs</i> <br />
+                @LanguageController.Get(Model.lang, "Index", "ContactUsPhoneNumber") <i>018 123 456</i> <br />
+            </p>
+        </div>
+    </div>
+
+    <script src="~/js/ONama.js" type="module" asp-append-version="true"></script>
+</body>

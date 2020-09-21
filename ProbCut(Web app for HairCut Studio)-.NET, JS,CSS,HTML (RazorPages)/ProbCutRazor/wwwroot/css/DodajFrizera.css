@@ -1,0 +1,56 @@
+﻿@media (min-width: 1201px) {
+    #rcorners {
+        width: 400px;
+        min-width: 400px;
+        margin-left: -200px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+    #rcorners {
+        width: 320px;
+        min-width: 320px;
+        margin-left: -160px;
+    }
+}
+
+#rcorners {
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    background-color: #e3f2fd;
+    padding: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#formLogin, #buttonLogin, #formRegister, #buttonAddBarber {
+    width: 100%;
+}
+
+#ClickHereToRegister, #ClickHereToLogin {
+    font-size: 13px;
+}
+
+#formGroupRegisterHere, #formGroupLoginHere {
+    text-align: center;
+}
+
+#rcorners #formLogin #formNameLogin, #rcorners #formRegister #formNameRegister {
+    text-align: center;
+    font-size: 25px;
+}
+
+#rcorners #formLogin #formSeparator, #rcorners #formRegister #formSeparator {
+    border-color: #c2c2c2;
+}
+
+#inputGroupUsername, #inputGroupPassword, #inputGroupFirstName, #inputGroupLastName {
+    display: flex;
+    flex-direction: column;
+}

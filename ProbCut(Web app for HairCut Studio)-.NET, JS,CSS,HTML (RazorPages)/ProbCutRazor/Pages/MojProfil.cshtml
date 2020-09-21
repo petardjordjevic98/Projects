@@ -1,0 +1,100 @@
+﻿@page
+@using ProbCut.Models;
+@model MojProfilModel
+@{
+    ViewData["Title"] = LanguageController.Get(Model.lang, "MyProfile", "Title");
+}
+
+<link rel="stylesheet" href="~/css/MojProfil.css" asp-append-version="true" />
+<body>
+    <!-- header -->
+    <div style="display: flex; justify-content: center; text-align: center;">
+        <div id="MyProfileHeader">
+            <div style="display: block; margin: auto;" id="imageAvatarContainer">
+            </div>
+            <h2 class="h2" id="MyProfileHeaderUsername">@Model.vratiKorisnika().username</h2>
+            <h5 class="small" id="tipKorisnika"></h5>
+            <div id="MyProfileHeaderStatContainer">
+                <div class="MyProfileHeaderStat" id="Stat1Container">
+                    <label id="stat1" class="labelStat"></label>
+                    <h5 class="small" id="stat1Opis"></h5>
+                </div>
+
+                <div class="MyProfileHeaderStat" id="Stat2Container">
+                    <label id="stat2" class="labelStat"></label>
+                    <h5 class="small" id="stat2Opis"></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ratingSection">
+        <div class="my-rating-4" id="stars" data-rating="5" style="display: none; margin-top: 10px;"></div>
+    </div>
+
+    <!-- my profile data -->
+    <div style="display: flex; justify-content: center;">
+        <div class="MyProfileContainer" id="MyProfileData">
+            <div id="buttonEditContainer">
+                <div id="divButtonRight"></div>
+                <div id="divButtonLeft"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- confirm account delete dialog (modal) -->
+    <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-exclamation" style="color: red; padding-right: 10px;"></i>@LanguageController.Get(Model.lang, "MyProfile", "DialogConfirmTitle")
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    @LanguageController.Get(Model.lang, "MyProfile", "DialogConfirmText")
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        @LanguageController.Get(Model.lang, "MyProfile", "DialogConfirmButtonClose")
+                    </button>
+                    <button type="button" class="btn btn-primary" id="buttonDeleteAccount">
+                        @LanguageController.Get(Model.lang, "MyProfile", "DialogConfirmButtonConfirm")
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- confirm comment delete dialog (modal) -->
+    <div class="modal fade" id="modalDeleteComment" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-exclamation" style="color: red; padding-right: 10px;"></i>@LanguageController.Get(Model.lang, "MyProfile", "DialogConfirmTitle")
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    @LanguageController.Get(Model.lang, "MyProfile", "DialogConfirmCommentText")
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        @LanguageController.Get(Model.lang, "MyProfile", "DialogConfirmButtonClose")
+                    </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="buttonDeleteComment">
+                        @LanguageController.Get(Model.lang, "MyProfile", "DialogConfirmButtonConfirm")
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/MojProfil.js" type="module" asp-append-version="true"></script>
+</body>

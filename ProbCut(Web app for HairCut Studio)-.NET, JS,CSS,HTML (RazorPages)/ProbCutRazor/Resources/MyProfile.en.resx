@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ButtonEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ButtonPost" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="ButtonRate" xml:space="preserve">
+    <value>Rate barber</value>
+  </data>
+  <data name="ButtonSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="DataDateOfBirth" xml:space="preserve">
+    <value>Date of birth:</value>
+  </data>
+  <data name="DataFirstName" xml:space="preserve">
+    <value>First name:</value>
+  </data>
+  <data name="DataGender" xml:space="preserve">
+    <value>Gender:</value>
+  </data>
+  <data name="DataGenderToWorkWith" xml:space="preserve">
+    <value>Gender the barber can work with:</value>
+  </data>
+  <data name="DataLastName" xml:space="preserve">
+    <value>Last name:</value>
+  </data>
+  <data name="DataPassword" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="DataPhoneNumber" xml:space="preserve">
+    <value>Phone number:</value>
+  </data>
+  <data name="DataUsername" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="DeleteAccount" xml:space="preserve">
+    <value>Delete account</value>
+  </data>
+  <data name="DialogConfirmButtonClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="DialogConfirmButtonConfirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="DialogConfirmCommentText" xml:space="preserve">
+    <value>Are you sure you want to delete this comment?</value>
+  </data>
+  <data name="DialogConfirmText" xml:space="preserve">
+    <value>After you delete the account, you won't be able to recover your data. Do you wish to proceed?</value>
+  </data>
+  <data name="DialogConfirmTitle" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="EditAppointment" xml:space="preserve">
+    <value>Edit appointment</value>
+  </data>
+  <data name="ErrorDateOfBirthEmpty" xml:space="preserve">
+    <value>- The field "date of birth" is required.</value>
+  </data>
+  <data name="ErrorFirstNameEmpty" xml:space="preserve">
+    <value>- The field "first name" is required.</value>
+  </data>
+  <data name="ErrorFirstNameInvalidCharacter" xml:space="preserve">
+    <value>- Invalid character. The field "first name" can consist of only letters.</value>
+  </data>
+  <data name="ErrorFirstNameTooShort" xml:space="preserve">
+    <value>- The field "first name" must be at least 2 characters long.</value>
+  </data>
+  <data name="ErrorLastNameEmpty" xml:space="preserve">
+    <value>- The field "last name" is required.</value>
+  </data>
+  <data name="ErrorLastNameEmpty1" xml:space="preserve">
+    <value>- The field "last name" is required.</value>
+  </data>
+  <data name="ErrorLastNameInvalidCharacter" xml:space="preserve">
+    <value>- Invalid character. The field "last name" can consist of only letters.</value>
+  </data>
+  <data name="ErrorLastNameTooShort" xml:space="preserve">
+    <value>- The field "last name" must be at least 2 characters long.</value>
+  </data>
+  <data name="ErrorNewPasswordEmpty" xml:space="preserve">
+    <value>- The field "new password" is required.</value>
+  </data>
+  <data name="ErrorNewPasswordTooLong" xml:space="preserve">
+    <value>- The field "new password" cannot be longer than 30 characters.</value>
+  </data>
+  <data name="ErrorNewPasswordTooShort" xml:space="preserve">
+    <value>- The field "new password" must be at least 6 characters long.</value>
+  </data>
+  <data name="ErrorOldPasswordEmpty" xml:space="preserve">
+    <value>- The field "old password" is required.</value>
+  </data>
+  <data name="ErrorPhoneNumberInvalidCharacter" xml:space="preserve">
+    <value>- Invalid character. Valid characters are number and spaces.</value>
+  </data>
+  <data name="ErrorUsernameAlreadyExists" xml:space="preserve">
+    <value>- Username already exists.</value>
+  </data>
+  <data name="ErrorUsernameConsecutiveSymbols" xml:space="preserve">
+    <value>- The field "username" cannot have consecutive symbols '.' and '-'.</value>
+  </data>
+  <data name="ErrorUsernameEmpty" xml:space="preserve">
+    <value>- The field "username" is required.</value>
+  </data>
+  <data name="ErrorUsernameInvalidCharacter" xml:space="preserve">
+    <value>- Invalid character. Valid characters are letters, numbers, periods, dashes and underscores.</value>
+  </data>
+  <data name="ErrorUsernameTooLong" xml:space="preserve">
+    <value>- The field "username" cannot consist of more than 30 characters.</value>
+  </data>
+  <data name="ErrorUsernameTooShort" xml:space="preserve">
+    <value>- The field "username" must be at least 3 characters long.</value>
+  </data>
+  <data name="ErrorWrongOldPassword" xml:space="preserve">
+    <value>- Incorrect old password.</value>
+  </data>
+  <data name="GenderBoth" xml:space="preserve">
+    <value>Both</value>
+  </data>
+  <data name="GenderFemale" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="GenderMale" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="GenderNone" xml:space="preserve">
+    <value>I prefer not to say</value>
+  </data>
+  <data name="LabelAlreadyRated" xml:space="preserve">
+    <value>You already submitted a rating.</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>New password:</value>
+  </data>
+  <data name="NoCommentsLabel" xml:space="preserve">
+    <value>This profile has no comments.</value>
+  </data>
+  <data name="NotificationCommentAdded" xml:space="preserve">
+    <value>Comment successfully added.</value>
+  </data>
+  <data name="NotificationCommentDeleted" xml:space="preserve">
+    <value>Comment successfully deleted.</value>
+  </data>
+  <data name="NotificationCommentDeleteFailed" xml:space="preserve">
+    <value>There was an error deleting this comment.</value>
+  </data>
+  <data name="NotificationCommentFailed" xml:space="preserve">
+    <value>There was an error posting this comment.</value>
+  </data>
+  <data name="NotificationFailedDeleteAccount" xml:space="preserve">
+    <value>There was an error while trying to delete your account.</value>
+  </data>
+  <data name="NotificationRatingAdded" xml:space="preserve">
+    <value>Barber rating submitted.</value>
+  </data>
+  <data name="NotificationRatingFailed" xml:space="preserve">
+    <value>There was an error rating the barber.</value>
+  </data>
+  <data name="NotificationSuccessfulDataChange" xml:space="preserve">
+    <value>You have successfully updated your profile.</value>
+  </data>
+  <data name="NotificationSuccessfulPasswordChange" xml:space="preserve">
+    <value>You have successfully updated your password.</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Old password:</value>
+  </data>
+  <data name="StatDescAppointment" xml:space="preserve">
+    <value>appointment</value>
+  </data>
+  <data name="StatDescLastActivity" xml:space="preserve">
+    <value>last activity</value>
+  </data>
+  <data name="StatDescNumOfAppointments" xml:space="preserve">
+    <value>finished appointments</value>
+  </data>
+  <data name="StatDescNumOfBarbers" xml:space="preserve">
+    <value>workers</value>
+  </data>
+  <data name="StatDescRating" xml:space="preserve">
+    <value>rating</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>My profile</value>
+  </data>
+  <data name="TypeOfUserF" xml:space="preserve">
+    <value>Barber</value>
+  </data>
+  <data name="TypeOfUserM" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="TypeOfUserV" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="YourComment" xml:space="preserve">
+    <value>Leave your comment here</value>
+  </data>
+</root>

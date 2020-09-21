@@ -1,0 +1,54 @@
+﻿@page
+@using ProbCut.Models;
+@model LogovanMusterijaModel
+@{
+    ViewData["Title"] = LanguageController.Get(Model.lang, "LogovanMusterija", "Title");
+}
+
+<link rel="stylesheet" href="~/css/LogovanMusterija.css" asp-append-version="true" />
+
+<div style="display: flex; flex-direction: column; margin-top: 30px;">
+    <div class="text-center" id="HeadingSchedule" style="font-size: 4rem">@LanguageController.Get(Model.lang, "LogovanMusterija", "Heading")</div>
+    <br />
+</div>
+
+<!-- confirm account delete dialog (modal) -->
+<div class="modal fade" id="modalSchedule" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="fas fa-plus" style="color: green; padding-right: 10px;"></i>@LanguageController.Get(Model.lang, "LogovanMusterija", "Heading")
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <div style="display: flex; align-items: center;">
+                    <label style="margin-right: 10px;">@LanguageController.Get(Model.lang, "LogovanMusterija", "LabelAppointmentTime")</label>
+                    <input type="time" class="form-control" id="inputTime" value="@DateTime.Now.ToString("hh:mm tt")" />
+                </div>
+                <div style="display: flex; align-items: center; margin-top: 20px;">
+                    <label style="margin-right: 10px;">@LanguageController.Get(Model.lang, "LogovanMusterija", "LabelAppointmentDuration")</label>
+                    <input type="number" class="form-control" id="inputDuration" value="30" />
+                </div>
+                <div style="display: flex; align-items: center; margin-top: 20px;">
+                    <label style="margin-right: 10px;">@LanguageController.Get(Model.lang, "LogovanMusterija", "LabelAppointmentService")</label>
+                    <input type="text" class="form-control" id="inputType" value="@LanguageController.Get(Model.lang, "LogovanMusterija", "Haircut")" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    @LanguageController.Get(Model.lang, "LogovanMusterija", "ButtonCancel")
+                </button>
+                <button type="button" class="btn btn-primary" id="buttonSchedule" data-dismiss="modal">
+                    @LanguageController.Get(Model.lang, "LogovanMusterija", "ButtonAdd")
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/LogovanMusterija.js" type="module" asp-append-version="true"></script>
+

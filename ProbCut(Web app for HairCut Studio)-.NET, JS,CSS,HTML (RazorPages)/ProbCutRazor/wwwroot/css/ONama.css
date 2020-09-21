@@ -1,0 +1,140 @@
+﻿/* desktop, laptop */
+@media (min-width: 1201px) {
+
+    #bodyAboutUs {
+        background-image: url("../lib/custom/background_desktop.png");
+    }
+
+    #mapAboutUs {
+        width: 80%;
+    }
+
+    #AboutUsSection2 {
+        margin-top: 220px;
+    }
+
+    #chartContainer {
+        width: 50%;
+        margin-top: 100px;
+    }
+
+    #AboutUsSection3 {
+        margin-top: 250px;
+    }
+
+    #contactUsTextDivAboutUs {
+        width: 40%;
+        margin-left: 25px;
+    }
+}
+
+/* tablet */
+@media (min-width: 601px) and (max-width: 1200px) {
+
+    #bodyAboutUs {
+        background-image: url("../lib/custom/background_tablet.png");
+    }
+
+    #mapAboutUs {
+        width: 80%;
+    }
+
+    #AboutUsSection2 {
+        margin-top: 135px;
+    }
+
+    #chartContainer {
+        width: 70%;
+        margin-top: 80px;
+    }
+
+    #AboutUsSection3 {
+        margin-top: 160px;
+    }
+}
+
+/* smartphone */
+@media (min-width: 320px) and (max-width: 600px) {
+    #bodyAboutUs {
+        background-image: url("../lib/custom/background_smartphone.png");
+        background-position-y: 500px;
+    }
+
+    #mapAboutUs {
+        width: 100%;
+    }
+
+    #AboutUsSection2 {
+        margin-top: 150px;
+    }
+
+    #chartContainer {
+        width: 100%;
+    }
+
+    #paragraphAboutUsHidden {
+        display: none;
+    }
+
+    .countersAboutUs {
+        display: none;
+    }
+
+    #AboutUsSection3 {
+        margin-top: 170px;
+    }
+}
+
+/* ----------------------------------------------- */
+
+#contactUsText {
+    line-height: 1.8;
+}
+
+#cardAboutUs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cardAboutUs {
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#chartContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#paragraphAboutUsHidden {
+    margin-top: -15px;
+}
+
+#scrolled2 {
+    margin-top: 50px;
+}
+
+.countersAboutUs {
+    position: relative;
+    text-align: center;
+}
+
+#contactUsTextDivAboutUs {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+#mapAboutUs {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #c2c2c2;
+}
+
+#mapDisplay {
+    display: flex;
+    justify-content: center;
+}

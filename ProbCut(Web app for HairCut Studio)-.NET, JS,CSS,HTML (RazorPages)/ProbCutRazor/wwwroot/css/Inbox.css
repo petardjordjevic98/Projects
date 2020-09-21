@@ -1,0 +1,259 @@
+﻿:root {
+    --font: Ubuntu Mono;
+    --border: 1px solid #c2c2c2;
+    --colorBlue: #e3f2fd;
+    --colorGrey: #c2c2c2;
+}
+/* desktop, laptop */
+@media (min-width: 1101px) {
+
+    .GlavniContainer {
+        width: 1000px;
+        min-height: 600px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .PorukeContainer {
+        width: 100%;
+    }
+
+    .divConversations {
+        width: 15%;
+        height: 100%;
+        margin: 20px 20px 20px 20px;
+    }
+}
+/* tablet & smartphone */
+@media (min-width: 320px) and (max-width: 1100px) {
+     #divButtonLeft {
+        flex-direction: row;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .messageLabel {
+        font-size: 13px;
+    }
+    .messageRow {
+        margin-top: 20px;
+    }
+
+    #mainInbox {
+        flex-direction: column;
+    }
+
+    .divConversations {
+        width: 80%;
+        margin: 20px auto 30px auto;
+    }
+
+    .GlavniContainer {
+        width: 90%;
+        min-height: 400px;
+        margin: 0px auto 30px auto;
+    }
+}
+
+#mainInbox {
+    display: flex;
+    justify-content: center;
+}
+
+.messageHistory {
+    display: flex;
+    width: 85%;
+}
+
+.labelConversations {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.inboxSeparator {
+    border: 0.1px solid #c2c2c2;
+    width: 80%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.conversation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conversation:hover {
+    background-color: #B8DEFA;
+}
+
+.conversation *:hover {
+    cursor: pointer;
+}
+
+.labelUsername {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.labelUsername {
+    font-size: 17px;
+}
+
+.labelType {
+    font-size: 14px;
+    color: dimgrey;
+}
+
+.divConversations {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 3px;
+    border: 1px solid #c2c2c2;
+    background-color: #e3f2fd;
+}
+
+#labelSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.GlavniContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: var(--border);
+    border-radius: 5px;
+    background-color: var(--colorBlue);
+}
+.myButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.btn-blue {
+    background-color: #a9dbff;
+    color: black;
+}
+.btn-light {
+    border-color: #17a2b8;
+}
+.btn-blue:hover {
+    background-color: #f8f9fa;
+    color: black;
+}
+.buttonIcon {
+    padding-right: 7px;
+}
+.messageRow {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+.messageAuthor {
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: 20px;
+}
+.messageTime {
+    font-family: var(--font);
+    margin-left: 10px;
+    margin-right: 10px;
+    color: dimgrey;
+    padding-top: 5px;
+}
+.message {
+    display: flex;
+    align-items: center;
+    font-family: var(--font);
+    font-size: 20px;
+    border: var(--border);
+    border-radius: 10px;
+    background-color: #a9dbff;
+    height: 50px;
+    list-style: none;
+}
+
+.messageLabel {
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#divButtonRight {
+    display: flex;
+    width: 100%;
+}
+#divButtonLeft {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.SendingTextBox {
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+    margin-top: 70px;
+}
+
+.inputContainer {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+.dugme {
+    width: 10%;
+}
+.InputSend {
+    width: 90%;
+
+}
+.View {
+    background-color: #e3f2fd;
+    color: black;
+    display: flex;
+    font-family: var(--font);
+}
+
+.commentTime {
+    font-family: var(--font);
+    margin-left: 10px;
+    margin-right: 10px;
+    color: dimgrey;
+    padding-top: 5px;
+}
+
+#buttonAddConversation {
+    margin: 30px auto 5px auto;
+    width: 80%;
+}
+
+.textboxUsername {
+    margin: 0px auto 20px auto;
+    width: 60%;
+}
+
+.textboxUsername::placeholder {
+    text-align: center;
+}

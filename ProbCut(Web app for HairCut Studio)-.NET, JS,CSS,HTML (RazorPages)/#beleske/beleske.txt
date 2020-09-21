@@ -1,0 +1,6 @@
+1. dodati ikonicu sajta/bolji logo
+2. startbootstrap.com template za neku od stranica
+3. select2.org za filtriranje pri pretrazivanju dostupnih frizera
+4. ikonice pored polja za unos pri login/registraciji i crveni border ukoliko je doslo do greske (primer u prezentaciji 10 saveta za UI)
+
+** prilikom brisanja naloga, treba proveriti da li se reference na tog korisnika nalaze negde drugde (npr mozda postoji termin koji je zakazan pod imenom obrisanog korisnika)

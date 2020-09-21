@@ -1,0 +1,15 @@
+C:\Users\HPs\source\repos\Asocijacije\Asocijacije\bin\Debug\Asocijacije.exe.config
+C:\Users\HPs\source\repos\Asocijacije\Asocijacije\bin\Debug\Asocijacije.exe
+C:\Users\HPs\source\repos\Asocijacije\Asocijacije\bin\Debug\Asocijacije.pdb
+C:\Users\HPs\source\repos\Asocijacije\Asocijacije\bin\Debug\Tulpep.NotificationWindow.dll
+C:\Users\HPs\source\repos\Asocijacije\Asocijacije\obj\Debug\Asocijacije.Asocijacija.resources
+C:\Users\HPs\source\repos\Asocijacije\Asocijacije\obj\Debug\Asocijacije.LoadingForm.resources
+C:\Users\HPs\source\repos\Asocijacije\Asocijacije\obj\Debug\Asocijacije.Properties.Resources.resources
+C:\Users\HPs\source\repos\Asocijacije\Asocijacije\obj\Debug\Asocijacije.csproj.GenerateResource.cache
+C:\Users\HPs\source\repos\Asocijacije\Asocijacije\obj\Debug\Asocijacije.csproj.CopyComplete
+C:\Users\HPs\source\repos\Asocijacije\Asocijacije\obj\Debug\Asocijacije.exe
+C:\Users\HPs\source\repos\Asocijacije\Asocijacije\obj\Debug\Asocijacije.pdb
+C:\Users\HPs\source\repos\Asocijacije\Asocijacije\obj\Debug\Asocijacije.Highscores.resources
+C:\Users\HPs\source\repos\Asocijacije\Asocijacije\obj\Debug\Asocijacije.Autor.resources
+C:\Users\HPs\source\repos\Asocijacije\Asocijacije\obj\Debug\Asocijacije.Bravo.resources
+C:\Users\HPs\source\repos\Asocijacije\Asocijacije\obj\Debug\Asocijacije.csprojAssemblyReference.cache

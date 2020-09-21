@@ -1,0 +1,64 @@
+-- Demo baza podataka frizerskog salona (4.22.2020.)
+
+-- Primeri tipova profila za testiranje:
+--	1. VLASNIK:
+--		username: mika
+--		password: mika123
+--	2. FRIZER:
+--		username: nata
+--		password: nata123
+--	3. MUSTERIJA:
+--		username: dare
+--		password: dare123
+-- ___________________________________________________
+--Vlasnici
+INSERT INTO [dbo].[Vlasnici] ([id], [ime], [prezime], [username], [password], [datumRodjenja], [pol], [brojTelefona], [poslednjiPutUlogovan])
+VALUES (1, N'Miljan', N'Djordjevic', N'mika', N'$2a$12$cB0tZxRG/3w2v0IlDs1P0u561TQAYChgaf6wBds79ZBnJqDiqwfVu', N'1987-04-20 12:00:00', N'M', N'064 123 45 22', N'2020-03-20 12:00:00')
+INSERT INTO [dbo].[Vlasnici] ([id], [ime], [prezime], [username], [password], [datumRodjenja], [pol], [brojTelefona], [poslednjiPutUlogovan])
+VALUES (2, N'Nikola', N'Spasic', N'nidza', N'$2a$12$cg1bRdHNDL2vcgTPI3OJsOPYZ.2PG.o8Wi2pw3YsHLfdlUOUEG5Im', N'1988-04-20 12:00:00', N'M', NULL, N'2020-03-20 13:00:00')
+
+--Frizeri
+INSERT INTO [dbo].[Frizeri] ([id], [ime], [prezime], [username], [password], [datumRodjenja], [pol], [brojTelefona], [prosecnaOcena], [brojOcena], [polKojiSisa], [brojRealizovanihTermina])
+VALUES (3, N'Natasa', N'Mitic', N'nata', N'$2a$12$ftptI4xhIQVk.pDEd9.zBuQIvD421bceA/tgGPBOrwvtK1Br1NCmC', N'1985-04-20 12:00:00', N'Z', N'063 123 45 22', 5, 2, N'O', 10)
+INSERT INTO [dbo].[Frizeri] ([id], [ime], [prezime], [username], [password], [datumRodjenja], [pol], [brojTelefona], [prosecnaOcena], [brojOcena], [polKojiSisa], [brojRealizovanihTermina])
+VALUES (4, N'Stefan', N'Doncic', N'stefi', N'$2a$12$./14TuGZZxpP6FBnctj8UOu2h6csUWGDVURAoFUNKe3kWa7YxvayK', N'1995-04-20 12:00:00', N'M', N'062 123 45 22', 3, 5, N'M', 5)
+INSERT INTO [dbo].[Frizeri] ([id], [ime], [prezime], [username], [password], [datumRodjenja], [pol], [brojTelefona], [prosecnaOcena], [brojOcena], [polKojiSisa], [brojRealizovanihTermina])
+VALUES (5, N'Marko', N'Nikolic', N'mare', N'$2a$12$.ploBysqmNo0Wy2iyh7EvuCYcyoazzQUBw2rQJgiHNBrWEKYDB9US', N'1997-04-20 12:00:00', N'M', NULL, 4.5, 5, N'M', 20)
+INSERT INTO [dbo].[Frizeri] ([id], [ime], [prezime], [username], [password], [datumRodjenja], [pol], [brojTelefona], [prosecnaOcena], [brojOcena], [polKojiSisa], [brojRealizovanihTermina])
+VALUES (6, N'Milica', N'Pancic', N'milica', N'$2a$12$1bk8YL92isVlRULRhV4YwujipPjr8qyO9tpwxBTAnsiJV2HsOmH8y', N'1990-04-20 12:00:00', N'Z', N'061 123 45 22', 3.5, 10, N'Z', 42)
+
+--Termini
+SET IDENTITY_INSERT [dbo].[Termini] ON
+INSERT INTO [dbo].[Termini] ([id], [frizerid], [vreme], [trajanjeUMinutima], [vrstaUsluge])
+VALUES (1, 3, N'2020-06-30 12:00:00', 30, N'Sisanje')
+SET IDENTITY_INSERT [dbo].[Termini] OFF
+
+--Musterije
+INSERT INTO [dbo].[Musterije] ([id], [ime], [prezime], [username], [password], [datumRodjenja], [pol], [brojTelefona], [terminid], [brojRealizovanihTermina])
+VALUES (7, N'Darko', N'Nikolic', N'dare', N'$2a$12$nJJLFXkORwqP/xTfpRtkSOW72BX7dmqKau7V9r3oamKyT92fSISjS', N'1989-04-20 13:00:00', N'M', N'064 321 67 22', 1, 123)
+INSERT INTO [dbo].[Musterije] ([id], [ime], [prezime], [username], [password], [datumRodjenja], [pol], [brojTelefona], [terminid], [brojRealizovanihTermina])
+VALUES (8, N'Valentina', N'Stojkovic', N'valentina', N'$2a$12$1Te1IP5/i/uo86C/MZ96qe45D/hF2bgIfm6xne1PFa/zvfAYUaHfy', N'1993-04-20 11:00:00', N'Z', N'060 123 45 67', NULL, 89)
+INSERT INTO [dbo].[Musterije] ([id], [ime], [prezime], [username], [password], [datumRodjenja], [pol], [brojTelefona], [terminid], [brojRealizovanihTermina])
+VALUES (9, N'Olivera', N'Dodić', N'olja', N'$2a$12$vYDHmhN6F53vAHnKB/E/eecl8JPgL32Z2ngncMCNMyzgjVheyweTW', N'1994-08-02 10:00:00', N'Z', N'063 123 45 67', NULL, 23)
+INSERT INTO [dbo].[Musterije] ([id], [ime], [prezime], [username], [password], [datumRodjenja], [pol], [brojTelefona], [terminid], [brojRealizovanihTermina])
+VALUES (10, N'Dušan', N'Dodić', N'dule', N'$2a$12$Wea4G.FjGVVNoCU1r0LYjeX6o38TlAhYF4SaWlECg4xfevXfxfP8y', N'1998-08-25 21:00:00', N'M', N'064 321 67 22', NULL, 13)
+
+--Komentari
+SET IDENTITY_INSERT [dbo].[Komentari] ON
+INSERT INTO [dbo].[Komentari] ([id], [autorid], [frizerid], [sadrzaj], [vreme])
+VALUES (1, 7, 3, N'Odlican frizer! Svaka preporuka.', N'2018-03-20 12:00:00')
+INSERT INTO [dbo].[Komentari] ([id], [autorid], [frizerid], [sadrzaj], [vreme])
+VALUES (2, 8, 3, N'Prekratko me osisala!', N'2020-05-05 21:30:00')
+INSERT INTO [dbo].[Komentari] ([id], [autorid], [frizerid], [sadrzaj], [vreme])
+VALUES (3, 7, 3, N'Nato, slobodna li si u subotu? Poz', N'2020-05-03 12:00:00')
+INSERT INTO [dbo].[Komentari] ([id], [autorid], [frizerid], [sadrzaj], [vreme])
+VALUES (4, 8, 3, N'Drugarica mi je preporucila ovaj salon i ne mogu da verujem! Odusevljena sam, svaka cast!', N'2020-01-18 09:30:38')
+SET IDENTITY_INSERT [dbo].[Komentari] OFF
+
+--Poruke
+SET IDENTITY_INSERT [dbo].[Poruke] ON
+INSERT INTO [dbo].[Poruke] ([id], [sadrzaj], [vreme], [idPosiljaoca], [idPrimaoca])
+VALUES (1, N'Ej, ima li guzva danas?', N'2020-04-23 00:00:00', 7, 3)
+INSERT INTO [dbo].[Poruke] ([id], [sadrzaj], [vreme], [idPosiljaoca], [idPrimaoca])
+VALUES (2, N'Nema, dodji odma!', N'2020-04-23 12:01:00', 3, 7)
+SET IDENTITY_INSERT [dbo].[Poruke] OFF

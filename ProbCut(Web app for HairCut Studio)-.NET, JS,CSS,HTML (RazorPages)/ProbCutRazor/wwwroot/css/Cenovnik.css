@@ -1,0 +1,46 @@
+﻿
+@font-face {
+    font-family: "LeanOFYW01";
+    src: url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.eot");
+    src: url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.woff") format("woff"), url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.svg#LeanOFYW01-Regular") format("svg");
+}
+
+/* tablet & smartphone */
+@media (min-width: 320px) and (max-width: 992px) {
+    #buttonEditPricing, #buttonCancelPricing, #buttonSavePricing {
+        flex-grow: 1;
+    }
+}
+
+#MainCenovnik {
+    font-family: LeanOFYW01;
+}
+
+#pricingHeading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0px 50px 0px;
+}
+
+#pricingTable > tbody > tr:nth-child(odd) {
+    background-color: #e3f2fd;
+}
+
+#tableContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.buttonEditPricingContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px 0px 10px 0px;
+}
+
+.paddingLeftRight {
+    padding-left: 10px;
+    padding-right: 10px;
+}

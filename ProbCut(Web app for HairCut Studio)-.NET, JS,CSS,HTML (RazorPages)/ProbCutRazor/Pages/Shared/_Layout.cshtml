@@ -1,0 +1,130 @@
+﻿@using ProbCut.Models;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    // load username and language cookies
+    string username = HttpContextAccessor.HttpContext.Request.Cookies["username"];
+    string lang = HttpContextAccessor.HttpContext.Request.Cookies["lang"];
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ProbCut</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Layout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/toastr/toastr.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/star-rating/star-rating-svg.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" type="text/css" asp-append-version="true" />
+</head>
+
+<body>
+    <header>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd">
+            <a href="/Index">
+                <img src="~/lib/custom/logo_png.png" class="navbar-brand" height="50" width="48" style="cursor: pointer"
+                     onmouseover="this.src = './lib/custom/logo_png_hover.png';"
+                     onmouseout="this.src = './lib/custom/logo_png.png';"
+                     onmousedown="this.src = './lib/custom/logo_png_click.png';" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Index" id="navItem">@LanguageController.Get(lang, "Layout", "Home")</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Cenovnik" id="navItem">@LanguageController.Get(lang, "Layout", "Pricing")</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/LogovanMusterija" id="navItem">@LanguageController.Get(lang, "Layout", "Schedule")</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ONama" id="navItem">@LanguageController.Get(lang, "Layout", "AboutUs")</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto nav-flex-icons" style="font-family: Ubuntu Mono;">
+
+                    <li class="nav-item dropdown" style="cursor: pointer; color: black">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            <label style="cursor: pointer">@LanguageController.Get(lang, "Layout", "Language")</label>
+                        </a>
+                        <i class="dropdown-menu dropdown-menu-right dropdown-default"
+                           aria-labelledby="navbarDropdownMenuLink">
+                            <a id="langdropdownitem" class="dropdown-item" onclick="LangChanged('en')" style="font-style: normal;">
+                                @LanguageController.Get(lang, "Layout", "LanguageEnglish")<i class="fas fa-check" id="langCheckboxEN" style="margin-left: 5px;"></i>
+                            </a>
+                            <a id="langdropdownitem" class="dropdown-item" onclick="LangChanged('sr')" style="font-style: normal;">
+                                @LanguageController.Get(lang, "Layout", "LanguageSerbian")<i class="fas fa-check" id="langCheckboxSR" style="margin-left: 5px;"></i>
+                            </a>
+                        </i>
+                    </li>
+
+                    @{
+                        if (username != null)
+                        {
+                            <li class="nav-item dropdown" style="cursor: pointer; color: black">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-user"></i>
+                                    <label style="cursor: pointer;"> @username </label>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                                     aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/MojProfil?username=@username">@LanguageController.Get(lang, "Layout", "MyProfile")</a>
+                                    <a class="dropdown-item" href="/Inbox">@LanguageController.Get(lang, "Layout", "Inbox")</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/Index?logout=true">@LanguageController.Get(lang, "Layout", "LogOut")</a>
+                                </div>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item" style="margin-right: 10px;" id="NavItemRegisterContainer">
+                                <button type="submit" class="btn btn-primary nav-link" onclick="location.href='/Register'" id="NavItemRegister" style="color: white">@LanguageController.Get(lang, "Layout", "Register")</button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="submit" class="btn btn-primary nav-link bg-light" onclick="location.href='/Login'" id="NavItemLogIn">@LanguageController.Get(lang, "Layout", "LogIn")</button>
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container" style="display: block; text-align: center">
+            <a>&copy; 2020 - PDF Team</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/countUp/CountUp.js"></script>
+    <script src="~/lib/fontawesome/6a174e0903.js" crossorigin="anonymous"></script>
+    <script src="~/lib/chart.js/Chart.min.js" asp-append-version="true"></script>
+    <script src="~/lib/toastr/toastr.js" asp-append-version="true"></script>
+    <script src="~/lib/moment/moment.js" asp-append-version="true"></script>
+    <script src="~/lib/moment/moment-with-locales.js" asp-append-version="true"></script>
+    <script src="~/lib/star-rating/jquery.star-rating-svg.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

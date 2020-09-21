@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>Odustani</value>
+  </data>
+  <data name="ButtonEdit" xml:space="preserve">
+    <value>Promeni</value>
+  </data>
+  <data name="ButtonPost" xml:space="preserve">
+    <value>Pošalji</value>
+  </data>
+  <data name="ButtonRate" xml:space="preserve">
+    <value>Oceni frizera</value>
+  </data>
+  <data name="ButtonSave" xml:space="preserve">
+    <value>Sačuvaj</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Promeni šifru</value>
+  </data>
+  <data name="DataDateOfBirth" xml:space="preserve">
+    <value>Datum rođenja:</value>
+  </data>
+  <data name="DataFirstName" xml:space="preserve">
+    <value>Ime:</value>
+  </data>
+  <data name="DataGender" xml:space="preserve">
+    <value>Pol:</value>
+  </data>
+  <data name="DataGenderToWorkWith" xml:space="preserve">
+    <value>Pol koji ume da šiša:</value>
+  </data>
+  <data name="DataLastName" xml:space="preserve">
+    <value>Prezime:</value>
+  </data>
+  <data name="DataPassword" xml:space="preserve">
+    <value>Šifra:</value>
+  </data>
+  <data name="DataPhoneNumber" xml:space="preserve">
+    <value>Broj telefona:</value>
+  </data>
+  <data name="DataUsername" xml:space="preserve">
+    <value>Korisničko ime:</value>
+  </data>
+  <data name="DeleteAccount" xml:space="preserve">
+    <value>Obriši nalog</value>
+  </data>
+  <data name="DialogConfirmButtonClose" xml:space="preserve">
+    <value>Zatvori</value>
+  </data>
+  <data name="DialogConfirmButtonConfirm" xml:space="preserve">
+    <value>Potvrdi</value>
+  </data>
+  <data name="DialogConfirmCommentText" xml:space="preserve">
+    <value>Da li ste sigurni da želite da obrišete ovaj komentar?</value>
+  </data>
+  <data name="DialogConfirmText" xml:space="preserve">
+    <value>Brisanjem naloga nećete moći da povratite svoje podatke. Da li želite da nastavite?</value>
+  </data>
+  <data name="DialogConfirmTitle" xml:space="preserve">
+    <value>Potvrda</value>
+  </data>
+  <data name="EditAppointment" xml:space="preserve">
+    <value>Promeni termin</value>
+  </data>
+  <data name="ErrorDateOfBirthEmpty" xml:space="preserve">
+    <value>- Polje "datum rođenja" je obavezno.</value>
+  </data>
+  <data name="ErrorFirstNameEmpty" xml:space="preserve">
+    <value>- Polje "ime" je obavezno.</value>
+  </data>
+  <data name="ErrorFirstNameInvalidCharacter" xml:space="preserve">
+    <value>- Nedozvoljen simbol. Polje "ime" može sadržati samo slova.</value>
+  </data>
+  <data name="ErrorFirstNameTooShort" xml:space="preserve">
+    <value>- Polje "ime" mora imati bar 2 slova.</value>
+  </data>
+  <data name="ErrorLastNameEmpty" xml:space="preserve">
+    <value>- Polje "prezime" je obavezno.</value>
+  </data>
+  <data name="ErrorLastNameInvalidCharacter" xml:space="preserve">
+    <value>- Nedozvoljen simbol. Polje "prezime" može sadržati samo slova.</value>
+  </data>
+  <data name="ErrorLastNameTooShort" xml:space="preserve">
+    <value>- Polje "prezime" mora imati bar 2 slova.</value>
+  </data>
+  <data name="ErrorNewPasswordEmpty" xml:space="preserve">
+    <value>- Polje "nova šifra" je obavezno.</value>
+  </data>
+  <data name="ErrorNewPasswordTooLong" xml:space="preserve">
+    <value>- Polje "nova šifra" ne sme biti duže od 30 slova.</value>
+  </data>
+  <data name="ErrorNewPasswordTooShort" xml:space="preserve">
+    <value>- Polje "nova šifra" mora imati bar 6 slova.</value>
+  </data>
+  <data name="ErrorOldPasswordEmpty" xml:space="preserve">
+    <value>- Polje 'stara šifra' je obavezno.</value>
+  </data>
+  <data name="ErrorPhoneNumberInvalidCharacter" xml:space="preserve">
+    <value>- Nedozvoljen simbol. Polje "broj telefona" može sadržati samo brojeve i razmake.</value>
+  </data>
+  <data name="ErrorUsernameAlreadyExists" xml:space="preserve">
+    <value>- Korisničko ime već postoji.</value>
+  </data>
+  <data name="ErrorUsernameConsecutiveSymbols" xml:space="preserve">
+    <value>- Polje "korisničko ime" ne sme imati više od jednog simbola '.' ili '-' zaredom.</value>
+  </data>
+  <data name="ErrorUsernameEmpty" xml:space="preserve">
+    <value>- Polje "korisničko ime" je obavezno.</value>
+  </data>
+  <data name="ErrorUsernameInvalidCharacter" xml:space="preserve">
+    <value>- Nedozvoljen simbol. Dozvoljeni simboli su slova, brojevi, tacke, crtice i donje crte.</value>
+  </data>
+  <data name="ErrorUsernameTooLong" xml:space="preserve">
+    <value>- Polje "korisničko ime" ne sme imati više od 30 slova.</value>
+  </data>
+  <data name="ErrorUsernameTooShort" xml:space="preserve">
+    <value>- Polje "korisničko ime" mora imati bar 3 slova.</value>
+  </data>
+  <data name="ErrorWrongOldPassword" xml:space="preserve">
+    <value>- Netačna stara šifra.</value>
+  </data>
+  <data name="GenderBoth" xml:space="preserve">
+    <value>Oba</value>
+  </data>
+  <data name="GenderFemale" xml:space="preserve">
+    <value>Ženski</value>
+  </data>
+  <data name="GenderMale" xml:space="preserve">
+    <value>Muški</value>
+  </data>
+  <data name="GenderNone" xml:space="preserve">
+    <value>Ne bih da se izjasnim</value>
+  </data>
+  <data name="LabelAlreadyRated" xml:space="preserve">
+    <value>Vaša ocena je već predata.</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Nova šifra:</value>
+  </data>
+  <data name="NoCommentsLabel" xml:space="preserve">
+    <value>Ovaj profil nema komentara.</value>
+  </data>
+  <data name="NotificationCommentAdded" xml:space="preserve">
+    <value>Uspešno dodat komentar.</value>
+  </data>
+  <data name="NotificationCommentDeleted" xml:space="preserve">
+    <value>Uspešno obrisan komentar.</value>
+  </data>
+  <data name="NotificationCommentDeleteFailed" xml:space="preserve">
+    <value>Došlo je do greške pri brisanju komentara.</value>
+  </data>
+  <data name="NotificationCommentFailed" xml:space="preserve">
+    <value>Došlo je do greške pri slanju komentara.</value>
+  </data>
+  <data name="NotificationFailedDeleteAccount" xml:space="preserve">
+    <value>Došlo je do greške pri brisanju naloga.</value>
+  </data>
+  <data name="NotificationRatingAdded" xml:space="preserve">
+    <value>Ocena uspešno poslata.</value>
+  </data>
+  <data name="NotificationRatingFailed" xml:space="preserve">
+    <value>Došlo je do greške pri ocenjivanju.</value>
+  </data>
+  <data name="NotificationSuccessfulDataChange" xml:space="preserve">
+    <value>Uspešno ste promenili podatke.</value>
+  </data>
+  <data name="NotificationSuccessfulPasswordChange" xml:space="preserve">
+    <value>Uspešno ste promenili šifru.</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Stara šifra:</value>
+  </data>
+  <data name="StatDescAppointment" xml:space="preserve">
+    <value>termin</value>
+  </data>
+  <data name="StatDescLastActivity" xml:space="preserve">
+    <value>poslednja aktivnost</value>
+  </data>
+  <data name="StatDescNumOfAppointments" xml:space="preserve">
+    <value>završenih termina</value>
+  </data>
+  <data name="StatDescNumOfBarbers" xml:space="preserve">
+    <value>radnika</value>
+  </data>
+  <data name="StatDescRating" xml:space="preserve">
+    <value>ocena</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Moj profil</value>
+  </data>
+  <data name="TypeOfUserF" xml:space="preserve">
+    <value>Frizer</value>
+  </data>
+  <data name="TypeOfUserM" xml:space="preserve">
+    <value>Mušterija</value>
+  </data>
+  <data name="TypeOfUserV" xml:space="preserve">
+    <value>Vlasnik salona</value>
+  </data>
+  <data name="YourComment" xml:space="preserve">
+    <value>Ostavi komentar ovde</value>
+  </data>
+</root>

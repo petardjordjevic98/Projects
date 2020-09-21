@@ -1,0 +1,154 @@
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\Skola.exe.config
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\Skola.exe
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\Skola.pdb
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\Antlr3.Runtime.dll
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\FluentNHibernate.dll
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\Iesi.Collections.dll
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\NHibernate.dll
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\Remotion.Linq.dll
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\Remotion.Linq.EagerFetching.dll
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\Antlr3.Runtime.xml
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\FluentNHibernate.xml
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\Iesi.Collections.xml
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\NHibernate.xml
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\Remotion.Linq.xml
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\bin\Debug\Remotion.Linq.EagerFetching.xml
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\obj\Debug\Skola.csprojAssemblyReference.cache
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\obj\Debug\Skola.Form1.resources
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\obj\Debug\Skola.Properties.Resources.resources
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\obj\Debug\Skola.csproj.GenerateResource.cache
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\obj\Debug\Skola.csproj.CopyComplete
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\obj\Debug\Skola.exe
+C:\Users\Korisnik\Documents\SBP\Skola\Skola\obj\Debug\Skola.pdb
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\obj\Debug\Skola.csprojAssemblyReference.cache
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\obj\Debug\Skola.Form1.resources
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\obj\Debug\Skola.Properties.Resources.resources
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\obj\Debug\Skola.csproj.GenerateResource.cache
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\obj\Debug\Skola.exe
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\obj\Debug\Skola.pdb
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\Skola.exe.config
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\Skola.exe
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\Skola.pdb
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\Antlr3.Runtime.dll
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\FluentNHibernate.dll
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\Iesi.Collections.dll
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\NHibernate.dll
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\Remotion.Linq.dll
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\Remotion.Linq.EagerFetching.dll
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\Antlr3.Runtime.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\FluentNHibernate.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\Iesi.Collections.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\NHibernate.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\Remotion.Linq.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\bin\Debug\Remotion.Linq.EagerFetching.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\Skola\Skola\Skola\obj\Debug\Skola.csproj.CopyComplete
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\Skola.exe.config
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\Skola.exe
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\Skola.pdb
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\Antlr3.Runtime.dll
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\FluentNHibernate.dll
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\Iesi.Collections.dll
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\NHibernate.dll
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\Remotion.Linq.dll
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\Remotion.Linq.EagerFetching.dll
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\Antlr3.Runtime.xml
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\FluentNHibernate.xml
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\Iesi.Collections.xml
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\NHibernate.xml
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\Remotion.Linq.xml
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\bin\Debug\Remotion.Linq.EagerFetching.xml
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\obj\Debug\Skola.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\obj\Debug\Skola.Form1.resources
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\obj\Debug\Skola.Properties.Resources.resources
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\obj\Debug\Skola.csproj.GenerateResource.cache
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\obj\Debug\Skola.csproj.CopyComplete
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\obj\Debug\Skola.exe
+C:\Users\Korisnik\Desktop\Skola\Skola\Skola\obj\Debug\Skola.pdb
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\Skola.exe.config
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\Skola.exe
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\Skola.pdb
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\Antlr3.Runtime.dll
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\FluentNHibernate.dll
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\Iesi.Collections.dll
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\NHibernate.dll
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\Remotion.Linq.dll
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\Remotion.Linq.EagerFetching.dll
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\Antlr3.Runtime.xml
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\FluentNHibernate.xml
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\Iesi.Collections.xml
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\NHibernate.xml
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\Remotion.Linq.xml
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\bin\Debug\Remotion.Linq.EagerFetching.xml
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\obj\Debug\Skola.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\obj\Debug\Skola.Form1.resources
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\obj\Debug\Skola.Properties.Resources.resources
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\obj\Debug\Skola.csproj.GenerateResource.cache
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\obj\Debug\Skola.csproj.CopyComplete
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\obj\Debug\Skola.exe
+C:\Users\Korisnik\Desktop\Klipovi\Skola\Skola\obj\Debug\Skola.pdb
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Skola.exe.config
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Skola.exe
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Skola.pdb
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Antlr3.Runtime.dll
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\FluentNHibernate.dll
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Iesi.Collections.dll
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\NHibernate.dll
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Remotion.Linq.dll
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Remotion.Linq.EagerFetching.dll
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Antlr3.Runtime.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\FluentNHibernate.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Iesi.Collections.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\NHibernate.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Remotion.Linq.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Remotion.Linq.EagerFetching.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\obj\Debug\Skola.csprojAssemblyReference.cache
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\obj\Debug\Skola.Form1.resources
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\obj\Debug\Skola.Properties.Resources.resources
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\obj\Debug\Skola.csproj.GenerateResource.cache
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\obj\Debug\Skola.csproj.CopyComplete
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\obj\Debug\Skola.exe
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\ProjekatDrugiDeo\Skola\Skola\obj\Debug\Skola.pdb
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Skola.exe.config
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Skola.exe
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Skola.pdb
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Antlr3.Runtime.dll
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\FluentNHibernate.dll
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Iesi.Collections.dll
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\NHibernate.dll
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Remotion.Linq.dll
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Remotion.Linq.EagerFetching.dll
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Antlr3.Runtime.xml
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\FluentNHibernate.xml
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Iesi.Collections.xml
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\NHibernate.xml
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Remotion.Linq.xml
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\bin\Debug\Remotion.Linq.EagerFetching.xml
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\obj\Debug\Skola.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\obj\Debug\Skola.Form1.resources
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\obj\Debug\Skola.Properties.Resources.resources
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\obj\Debug\Skola.csproj.GenerateResource.cache
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\obj\Debug\Skola.csproj.CopyComplete
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\obj\Debug\Skola.exe
+C:\Users\Korisnik\Desktop\ProjekatDrugiDeo\Skola\Skola\obj\Debug\Skola.pdb
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\bin\Debug\Skola.exe.config
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\bin\Debug\Skola.exe
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\bin\Debug\Skola.pdb
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\bin\Debug\Antlr3.Runtime.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\bin\Debug\FluentNHibernate.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\bin\Debug\Iesi.Collections.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\bin\Debug\NHibernate.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\bin\Debug\Remotion.Linq.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\bin\Debug\Remotion.Linq.EagerFetching.xml
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\obj\Debug\Skola.csprojAssemblyReference.cache
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\obj\Debug\Skola.Form1.resources
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\obj\Debug\Skola.Properties.Resources.resources
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\obj\Debug\Skola.csproj.GenerateResource.cache
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\obj\Debug\Skola.csproj.CopyComplete
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\obj\Debug\Skola.exe
+D:\Downloads\SEMESTAR2\BAZE\PROJEKAT\(16567+16697) Drugi deo\Skola\Skola\obj\Debug\Skola.pdb

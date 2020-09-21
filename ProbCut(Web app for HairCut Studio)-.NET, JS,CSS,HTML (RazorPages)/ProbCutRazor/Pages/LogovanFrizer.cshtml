@@ -1,0 +1,18 @@
+﻿@page
+@using ProbCut.Models;
+@model LogovanFrizerModel
+@{
+    ViewData["Title"] = LanguageController.Get(Model.lang, "LogovanFrizer", "Title");
+}
+
+<link rel="stylesheet" href="~/css/LogovanFrizer.css" asp-append-version="true" />
+
+<div style="display: flex; flex-direction: column; margin-top: 30px;">
+    <div class="text-center" id="HeadingSchedule"> @LanguageController.Get(Model.lang, "LogovanFrizer", "Title")</div>
+    <label class="text-primary text-center" style="font-size:xx-large">
+        <a href="./MojProfil?username=@Model.frizer.username">(@Model.frizer.ime @Model.frizer.prezime)</a>
+    </label>
+    <br />
+</div>
+
+<script src="~/js/LogovanFrizer.js" type="module" asp-append-version="true"></script>

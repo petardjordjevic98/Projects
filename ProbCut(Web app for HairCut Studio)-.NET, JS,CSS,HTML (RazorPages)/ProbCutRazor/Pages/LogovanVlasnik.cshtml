@@ -1,0 +1,97 @@
+﻿@page
+@using ProbCut.Models;
+@model LogovanVlasnikModel
+@{
+    ViewData["Title"] = LanguageController.Get(Model.lang, "LogovanVlasnik", "Title");
+}
+
+@if (Model.vlasnik != null)
+{
+    <link rel="stylesheet" href="~/css/LogovanVlasnik.css" asp-append-version="true" />
+    <main id="AdminPageMain">
+        <div style="display: flex; flex-direction: column; margin-top: 30px;">
+            <div class="display-3 text-center">@LanguageController.Get(Model.lang, "LogovanVlasnik", "Title")</div>
+            <label class="text-primary text-center" style="font-size:xx-large">
+                <a href="./MojProfil?username=@Model.vlasnik.username">(@Model.vlasnik.ime @Model.vlasnik.prezime)</a>
+            </label>
+            <br />
+        </div>
+
+        <div class="text-secondary" style="font-size:xx-large">@LanguageController.Get(Model.lang, "LogovanVlasnik", "LabelBarbers")</div>
+        <br />
+
+        @foreach (var f in Model.frizeri)
+        {
+            <div style="display: flex; flex-direction: column;">
+                <div style="display: flex;">
+                    <label class="text-info" style="font-size:x-large"><a href="./MojProfil?username=@f.username">@f.ime @f.prezime</a></label>
+                    <div style="display: flex; flex-direction: row-reverse; flex-grow: 1;">
+                        <button class="btn btn-danger buttonDeleteBarber" style="margin-left: 20px" id="@f.id">@LanguageController.Get(Model.lang, "LogovanVlasnik", "ButtonDeleteBarber")</button>
+                    </div>
+                </div>
+                <br />
+                <label class="text-secondary" style="font-size:large">@LanguageController.Get(Model.lang, "LogovanVlasnik", "LabelNumOfAppointments") @f.termini.Count</label>
+            </div>
+
+            <table class="table table-bordered table-hover table-striped" id="tableAdmin">
+                <thead>
+                    <tr>
+                        <td>@LanguageController.Get(Model.lang, "LogovanVlasnik", "TableHeaderTime")</td>
+                        <td>@LanguageController.Get(Model.lang, "LogovanVlasnik", "TableHeaderDuration")</td>
+                        <td>@LanguageController.Get(Model.lang, "LogovanVlasnik", "TableHeaderType")</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (var t in f.termini)
+                    {
+                        <tr>
+                            <td>@t.vreme</td>
+                            <td>@t.trajanjeUMinutima</td>
+                            <td>@t.vrstaUsluge</td>
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+            <br /><br /><br />
+        }
+
+        <div style="display: flex; justify-content: center;">
+            <form method="post">
+                <button type="submit" class="btn btn-primary btn-lg" asp-page-handler="DodajFrizera">@LanguageController.Get(Model.lang, "LogovanVlasnik", "ButtonAddBarber")</button>
+            </form>
+        </div>
+
+        <!-- confirm barber account delete (modal) -->
+        <div class="modal fade" id="modalDeleteBarber" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            <i class="fas fa-exclamation" style="color: red; padding-right: 10px;"></i>@LanguageController.Get(Model.lang, "LogovanVlasnik", "ModalTitle")
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        @LanguageController.Get(Model.lang, "LogovanVlasnik", "ModalQuestion")
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="modalButtonDeleteBarber">
+                            @LanguageController.Get(Model.lang, "LogovanVlasnik", "ModalButtonYes")
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            @LanguageController.Get(Model.lang, "LogovanVlasnik", "ModalButtonNo")
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br /><br /><br />
+
+        <script src="~/js/LogovanVlasnik.js" type="module" asp-append-version="true"></script>
+    </main>
+}

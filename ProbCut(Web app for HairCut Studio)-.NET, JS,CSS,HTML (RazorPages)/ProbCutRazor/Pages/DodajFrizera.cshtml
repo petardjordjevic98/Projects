@@ -1,0 +1,66 @@
+﻿@page
+@using ProbCut.Models;
+@model DodajFrizeraModel
+@{
+    ViewData["Title"] = LanguageController.Get(Model.lang, "AddBarber", "Title");
+}
+
+<link rel="stylesheet" href="~/css/DodajFrizera.css" asp-append-version="true" />
+
+<div id="rcorners">
+    <div id="formRegister">
+        <div id="formNameRegister">
+            <label>@LanguageController.Get(Model.lang, "AddBarber", "LabelAddBarber")</label>
+        </div>
+        <hr id="formSeparator" />
+        <div class="form-group" id="inputGroupFirstName">
+            <label>@LanguageController.Get(Model.lang, "AddBarber", "LabelFirstName")</label>
+            <input type="text" class="form-control" id="inputFirstName"
+                   aria-describedby="emailHelp" asp-for="frizer.ime">
+        </div>
+        <div class="form-group" id="inputGroupLastName">
+            <label>@LanguageController.Get(Model.lang, "AddBarber", "LabelLastName")</label>
+            <input type="text" class="form-control" id="inputLastName"
+                   aria-describedby="emailHelp" asp-for="frizer.prezime">
+        </div>
+        <div class="form-group" id="inputGroupUsername">
+            <label>@LanguageController.Get(Model.lang, "AddBarber", "LabelUsername")</label>
+            <input type="text" class="form-control" id="inputUsername"
+                   aria-describedby="emailHelp" asp-for="frizer.username">
+        </div>
+        <div class="form-group" id="inputGroupPassword">
+            <label>@LanguageController.Get(Model.lang, "AddBarber", "LabelPassword")</label>
+            <input type="password" class="form-control" id="inputPassword"
+                   asp-for="frizer.password">
+        </div>
+        <div class="form-group" id="inputGroupGender">
+            <label>@LanguageController.Get(Model.lang, "AddBarber", "LabelGender")</label>
+            <select id="inputGender" class="form-control" asp-for="genderFormatted">
+                <option selected>@LanguageController.Get(Model.lang, "AddBarber", "LabelGenderNone")</option>
+                <option>@LanguageController.Get(Model.lang, "AddBarber", "LabelGenderMale")</option>
+                <option>@LanguageController.Get(Model.lang, "AddBarber", "LabelGenderFemale")</option>
+            </select>
+        </div>
+        <div class="form-group" id="inputGroupGenderToWorkWith">
+            <label>@LanguageController.Get(Model.lang, "AddBarber", "LabelGenderToWorkWith")</label>
+            <select id="inputGenderToWorkWith" class="form-control" asp-for="genderToWorkWithFormatted">
+                <option selected>@LanguageController.Get(Model.lang, "AddBarber", "LabelGenderBoth")</option>
+                <option>@LanguageController.Get(Model.lang, "AddBarber", "LabelGenderMale")</option>
+                <option>@LanguageController.Get(Model.lang, "AddBarber", "LabelGenderFemale")</option>
+            </select>
+        </div>
+        <div class="form-group" id="inputGroupDateOfBirth">
+            <label>@LanguageController.Get(Model.lang, "AddBarber", "LabelDateOfBirth")</label>
+            <input type="date" class="form-control" id="inputDateOfBirth"
+                   asp-for="frizer.datumRodjenja">
+        </div>
+        <div class="form-group" id="inputGroupPhoneNumber">
+            <label>@LanguageController.Get(Model.lang, "AddBarber", "LabelPhoneNumber")</label>
+            <input type="text" class="form-control" id="inputPhoneNumber"
+                   asp-for="frizer.brojTelefona">
+        </div>
+        <button class="btn btn-primary" id="buttonAddBarber">@LanguageController.Get(Model.lang, "AddBarber", "LabelAddBarber")</button>
+    </div>
+</div>
+
+<script src="~/js/DodajFrizera.js" type="module" asp-append-version="true"></script>

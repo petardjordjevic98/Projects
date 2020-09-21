@@ -1,0 +1,227 @@
+﻿
+@font-face {
+    font-family: "LeanOFYW01";
+    src: url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.eot");
+    src: url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.woff") format("woff"), url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.svg#LeanOFYW01-Regular") format("svg");
+}
+
+/* desktop, laptop */
+@media (min-width: 1201px) {
+
+    #bodyIndex {
+        background-image: url("../lib/custom/background_desktop.png");
+    }
+
+    #HeadingProbCut {
+        font-size: 100px;
+    }
+
+    #imageAboutUs {
+        width: 40%;
+        border: 1px solid #c2c2c2;
+    }
+
+    #paragraphAboutUs {
+        width: 70%;
+    }
+
+    #buttonLearnMore {
+        width: 15%;
+    }
+
+    #counterFrizeri, #counterMusterije, #counterTermini {
+        font-size: 50px;
+    }
+
+    #contactUsTextDiv {
+        width: 40%;
+        margin-left: 25px;
+    }
+
+    #mapDisplay {
+        flex-direction: row;
+    }
+
+    #map {
+        width: 60%;
+        border: 1px solid #c2c2c2;
+    }
+}
+
+/* tablet */
+@media (min-width: 601px) and (max-width: 1200px) {
+
+    #bodyIndex {
+        background-image: url("../lib/custom/background_tablet.png");
+    }
+
+    #HeadingProbCut {
+        font-size: 80px;
+    }
+
+    #galleryImageCaption {
+        font-size: 15px;
+    }
+
+    #imageAboutUs {
+        width: 60%;
+        border: 1px solid #c2c2c2;
+    }
+
+    #paragraphAboutUs {
+        width: 70%;
+    }
+
+    #buttonLearnMore {
+        width: 25%;
+    }
+
+    #counterFrizeri, #counterMusterije, #counterTermini {
+        font-size: 50px;
+    }
+
+    #contactUsTextDiv, #contactUsTextDivAboutUs {
+        width: 40%;
+        margin-left: 25px;
+    }
+
+    #mapDisplay {
+        flex-direction: row;
+    }
+
+    #map {
+        width: 60%;
+        border: 1px solid #c2c2c2;
+    }
+}
+
+/* smartphone */
+@media (min-width: 320px) and (max-width: 600px) {
+    #bodyIndex {
+        background-image: url("../lib/custom/background_smartphone.png");
+        background-position-y: 400px;
+    }
+
+    #HeadingProbCut {
+        font-size: 60px;
+    }
+
+    .HeadingProbCutIs {
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #imageAboutUs {
+        width: 80%;
+        border: 1px solid #c2c2c2;
+    }
+
+    #paragraphAboutUs {
+        width: 90%;
+    }
+
+    #buttonLearnMore {
+        width: 30%;
+    }
+
+    #counterFrizeri, #counterMusterije, #counterTermini {
+        font-size: 28px;
+    }
+
+    #counterFrizeriLabel, #counterMusterijeLabel, #counterTerminiLabel {
+        font-size: 12px;
+    }
+
+    #contactUsTextDiv, #contactUsTextDivAboutUs {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #mapDisplay {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #map {
+        width: 100%;
+        border: 1px solid #c2c2c2;
+    }
+
+    #NavItemRegisterContainer {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #NavItemRegister, #NavItemLogIn {
+        width: 30%;
+    }
+}
+
+/* ----------------------------------------------- */
+
+#bodyIndex {
+    background-repeat: repeat-y;
+}
+
+#mainHeading {
+    font-family: LeanOFYW01;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.HeadingProbCutIs {
+    font-family: Ubuntu Mono;
+}
+
+.opacityCard {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.opacityCard:hover .image {
+    opacity: 0.3;
+}
+
+.opacityCard:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+#mapDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#map {
+    border: 1px solid #c2c2c2;
+}

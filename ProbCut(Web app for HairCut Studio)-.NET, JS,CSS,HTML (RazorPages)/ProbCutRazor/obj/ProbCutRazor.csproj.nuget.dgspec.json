@@ -1,0 +1,113 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\HPs\\Documents\\web1\\Aplikacija\\Web aplikacija\\ProbCutRazor\\ProbCutRazor.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\HPs\\Documents\\web1\\Aplikacija\\Web aplikacija\\ProbCutRazor\\ProbCutRazor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+<<<<<<< HEAD
+        "projectUniqueName": "D:\\#Projects\\#Web\\ProbCut (BitBucket)\\Aplikacija\\Web aplikacija\\ProbCutRazor\\ProbCutRazor.csproj",
+        "projectName": "ProbCut",
+        "projectPath": "D:\\#Projects\\#Web\\ProbCut (BitBucket)\\Aplikacija\\Web aplikacija\\ProbCutRazor\\ProbCutRazor.csproj",
+        "packagesPath": "C:\\Users\\Steve\\.nuget\\packages\\",
+        "outputPath": "D:\\#Projects\\#Web\\ProbCut (BitBucket)\\Aplikacija\\Web aplikacija\\ProbCutRazor\\obj\\",
+=======
+        "projectUniqueName": "C:\\Users\\HPs\\Documents\\web1\\Aplikacija\\Web aplikacija\\ProbCutRazor\\ProbCutRazor.csproj",
+        "projectName": "ProbCutRazor",
+        "projectPath": "C:\\Users\\HPs\\Documents\\web1\\Aplikacija\\Web aplikacija\\ProbCutRazor\\ProbCutRazor.csproj",
+        "packagesPath": "C:\\Users\\HPs\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HPs\\Documents\\web1\\Aplikacija\\Web aplikacija\\ProbCutRazor\\obj\\",
+>>>>>>> 6b1ad75c9cb87505f6712b3308077a7303b42e42
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HPs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Extended.Wpf.Toolkit": {
+              "target": "Package",
+              "version": "[3.8.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.1.0-preview1.19506.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.10.1, )"
+            },
+            "System.Resources.Reader": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

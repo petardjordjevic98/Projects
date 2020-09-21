@@ -1,0 +1,14 @@
+﻿
+@font-face {
+    font-family: "LeanOFYW01";
+    src: url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.eot");
+    src: url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.woff") format("woff"), url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/818e370c5e79a6234bdc6175885d29aa.svg#LeanOFYW01-Regular") format("svg");
+}
+
+#tableAdmin > thead > tr {
+    background-color: #e3f2fd;
+}
+
+#AdminPageMain {
+    font-family: LeanOFYW01;
+}

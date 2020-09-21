@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ButtonLearnMore" xml:space="preserve">
+    <value>Learn more</value>
+  </data>
+  <data name="ButtonPricing" xml:space="preserve">
+    <value>Pricing</value>
+  </data>
+  <data name="ButtonRegister" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="ButtonSetAppointment" xml:space="preserve">
+    <value>Set an appointment</value>
+  </data>
+  <data name="Card1Text" xml:space="preserve">
+    <value>Affordable prices for even better service in the ProbCut barbershop.</value>
+  </data>
+  <data name="Card1Title" xml:space="preserve">
+    <value>Find out</value>
+  </data>
+  <data name="Card2Text" xml:space="preserve">
+    <value>Don't want to wait for hours in line for a haircut? Set an appointment online in one click.</value>
+  </data>
+  <data name="Card2Title" xml:space="preserve">
+    <value>Set an appointment</value>
+  </data>
+  <data name="Card3Text" xml:space="preserve">
+    <value>Register as a customer and enjoy all features that this web application offers.</value>
+  </data>
+  <data name="Card3Title" xml:space="preserve">
+    <value>Join us</value>
+  </data>
+  <data name="CardPricingText" xml:space="preserve">
+    <value>Find out all about the services we provide and their prices.</value>
+  </data>
+  <data name="CardPricingTitle" xml:space="preserve">
+    <value>Pricing</value>
+  </data>
+  <data name="CardRegisterText" xml:space="preserve">
+    <value>Join the community of people who always have a great haircut!</value>
+  </data>
+  <data name="CardRegisterTitle" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="CardSetAppointmentText" xml:space="preserve">
+    <value>Search through our database and find the most suitable barber for your needs.</value>
+  </data>
+  <data name="CardSetAppointmentTitle" xml:space="preserve">
+    <value>Set an appointment with your favorite barber</value>
+  </data>
+  <data name="ContactUsAddress" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="ContactUsLabel" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="ContactUsPhoneNumber" xml:space="preserve">
+    <value>Phone number:</value>
+  </data>
+  <data name="CounterLabelAppointments1" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="CounterLabelAppointments2" xml:space="preserve">
+    <value>appointments</value>
+  </data>
+  <data name="CounterLabelBarbers" xml:space="preserve">
+    <value>Barbers</value>
+  </data>
+  <data name="CounterLabelCustomers" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="Haircut1" xml:space="preserve">
+    <value>Fringe</value>
+  </data>
+  <data name="Haircut2" xml:space="preserve">
+    <value>Fade</value>
+  </data>
+  <data name="Haircut3" xml:space="preserve">
+    <value>Curly</value>
+  </data>
+  <data name="HaircutsDescription" xml:space="preserve">
+    <value>We offer a variety of unique haircuts for all ages and a group of creative professionals.</value>
+  </data>
+  <data name="HeadingHaircuts" xml:space="preserve">
+    <value>A variety of haircuts</value>
+  </data>
+  <data name="HeadingProbcutIs" xml:space="preserve">
+    <value>ProbCut is a web application designed to make scheduling a barbershop appointment easier.</value>
+  </data>
+  <data name="HeadingWhoAreWe" xml:space="preserve">
+    <value>Who are we?</value>
+  </data>
+  <data name="NotificationSuccessfulDeleteAccount" xml:space="preserve">
+    <value>You have successfully deleted your account.</value>
+  </data>
+  <data name="NotificationSuccessfulLogin" xml:space="preserve">
+    <value>You have successfully logged in.</value>
+  </data>
+  <data name="NotificationSuccessfulLogout" xml:space="preserve">
+    <value>You have successfully logged out.</value>
+  </data>
+  <data name="NotificationSuccessfulRegister" xml:space="preserve">
+    <value>You have been successfully registered.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="WhoAreWeDescription" xml:space="preserve">
+    <value>PDF team is a group of three young and ambicious guys who want to apply their software engineering knowledge and make the life of people around them easier.</value>
+  </data>
+</root>

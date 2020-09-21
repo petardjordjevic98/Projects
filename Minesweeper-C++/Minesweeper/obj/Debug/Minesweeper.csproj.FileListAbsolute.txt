@@ -1,0 +1,1 @@
+D:\#Projects\#CSharp\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe.config

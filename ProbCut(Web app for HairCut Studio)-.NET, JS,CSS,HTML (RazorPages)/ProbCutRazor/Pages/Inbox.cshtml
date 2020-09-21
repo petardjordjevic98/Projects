@@ -1,0 +1,9 @@
+﻿@page
+@using ProbCut.Models;
+@model InboxModel
+@{
+    ViewData["Title"] = LanguageController.Get(Model.lang, "Inbox", "Title");
+}
+
+<link rel="stylesheet" href="~/css/Inbox.css" asp-append-version="true" />
+<script src="~/js/Inbox.js" type="module" asp-append-version="true"></script>

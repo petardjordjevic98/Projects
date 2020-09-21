@@ -1,0 +1,394 @@
+﻿@page
+@using ProbCut.Models;
+@model RegisterModel
+@{
+    ViewData["Title"] = LanguageController.Get(Model.lang, "Register", "Title");
+}
+
+<link rel="stylesheet" href="~/css/LoginRegister.css" asp-append-version="true" />
+<div id="rcorners">
+    <form method="post" id="formRegister">
+        <div id="formNameRegister">
+            <label>@LanguageController.Get(Model.lang, "Register", "RegisterLabel")</label>
+        </div>
+        <hr id="formSeparator" />
+        <input type="hidden" id="inputHasErrors" asp-for="hasErrors" />
+        <div class="form-group" id="inputGroupFirstName">
+            <label>@LanguageController.Get(Model.lang, "Register", "FirstName")</label>
+            <input type="text" class="form-control" id="inputFirstName"
+                   aria-describedby="emailHelp" asp-for="musterija.ime">
+        </div>
+        <div class="form-group" id="inputGroupLastName">
+            <label>@LanguageController.Get(Model.lang, "Register", "LastName")</label>
+            <input type="text" class="form-control" id="inputLastName"
+                   aria-describedby="emailHelp" asp-for="musterija.prezime">
+        </div>
+        <div class="form-group" id="inputGroupUsername">
+            <label>@LanguageController.Get(Model.lang, "Register", "Username")</label>
+            <input type="text" class="form-control" id="inputUsername"
+                   aria-describedby="emailHelp" asp-for="musterija.username">
+        </div>
+        <div class="form-group" id="inputGroupPassword">
+            <label>@LanguageController.Get(Model.lang, "Register", "Password")</label>
+            <input type="password" class="form-control" id="inputPassword"
+                   asp-for="musterija.password">
+        </div>
+        <div class="form-group" id="inputGroupGender">
+            <label>@LanguageController.Get(Model.lang, "Register", "Gender")</label>
+            <select id="inputGender" class="form-control" asp-for="genderFormatted">
+                <option selected>@LanguageController.Get(Model.lang, "Register", "GenderNone")</option>
+                <option>@LanguageController.Get(Model.lang, "Register", "GenderMale")</option>
+                <option>@LanguageController.Get(Model.lang, "Register", "GenderFemale")</option>
+            </select>
+        </div>
+        <div class="form-group" id="inputGroupDateOfBirth">
+            <label>@LanguageController.Get(Model.lang, "Register", "DateOfBirth")</label>
+            <input type="date" class="form-control" id="inputDateOfBirth"
+                   asp-for="musterija.datumRodjenja">
+        </div>
+        <div class="form-group" id="inputGroupPhoneNumber">
+            <label>@LanguageController.Get(Model.lang, "Register", "PhoneNumber")</label>
+            <input type="text" class="form-control" id="inputPhoneNumber"
+                   asp-for="musterija.brojTelefona">
+        </div>
+        <div class="form-group" id="formGroupLoginHere">
+            <a href="./Login" id="ClickHereToLogin">@LanguageController.Get(Model.lang, "Register", "AlreadyAMember")</a>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="validate()" id="buttonRegister">@LanguageController.Get(Model.lang, "Register", "Register")</button>
+    </form>
+</div>
+
+<script type="text/javascript">
+    @{
+        <text>
+            displayErrorMessages('@Model.errorMessages');
+
+    function validate()
+    {
+        // generate loading animation
+        let btn = document.getElementById('buttonRegister');
+        btn.innerHTML = '';
+        btn.style.display = 'flex';
+        btn.style.justifyContent = 'center';
+
+        let animation = document.createElement('span');
+        animation.className = 'spinner-border spinner-border-sm';
+        animation.id = 'registerAnimation';
+        btn.appendChild(animation);
+        btn.style.height = '38px';
+
+        // client-side data validation
+
+        // removing previous error texts
+        $('.errorMessage').remove();
+
+        // displaying errors if they exist
+        var hasErrors = false;
+        document.getElementById('inputHasErrors').value = false;
+        var firstNameValue = document.getElementById("inputFirstName").value;
+        var lastNameValue = document.getElementById("inputLastName").value;
+        var usernameValue = document.getElementById("inputUsername").value;
+        var passwordValue = document.getElementById("inputPassword").value;
+        var dateOfBirthValue = document.getElementById("inputDateOfBirth").value;
+        var phoneNumber = document.getElementById("inputPhoneNumber").value;
+        var errorTextFirstName = "";
+        var errorTextLastName = "";
+        var errorTextUsername = "";
+        var errorTextPassword = "";
+        var errorTextDateOfBirth = "";
+        var errorTextPhoneNumber = "";
+
+        //      1. checking if the first name is empty
+        if (firstNameValue == "")
+        {
+            errorTextFirstName += '@LanguageController.Get(Model.lang, "Register", "ErrorFirstNameEmpty")' + "<br />";
+            hasErrors = true;
+        }
+        //      2. checking if the first name is at least 2 characters long
+        else if (firstNameValue.length < 2)
+        {
+            errorTextFirstName += '@LanguageController.Get(Model.lang, "Register", "ErrorFirstNameTooShort")' + "<br />";
+            hasErrors = true;
+        }
+
+        //      3. checking if the first name uses invalid characters
+        var validCharactersFirstName = 'abcčćdđefghijklmnopqrsštuvwxyzžABCČĆDĐEFGHIJKLMNOPQRSŠTUVWXYZŽ';
+        for (var i = firstNameValue.length-1; i >= 0; i--)
+        {
+            if (validCharactersFirstName.indexOf(firstNameValue.substr(i, 1)) == -1)
+            {
+                errorTextFirstName += '@LanguageController.Get(Model.lang, "Register", "ErrorFirstNameInvalidCharacter")' + "<br />";
+                hasErrors = true;
+                break;
+            }
+        }
+
+        // _____________________________________________________________________________________
+        //      1. checking if the last name is empty
+        if (lastNameValue == "")
+        {
+            errorTextLastName += '@LanguageController.Get(Model.lang, "Register", "ErrorLastNameEmpty")' + "<br />";
+            hasErrors = true;
+        }
+        //      2. checking if the last name is at least 2 characters long
+        else if (lastNameValue.length < 2)
+        {
+            errorTextLastName += '@LanguageController.Get(Model.lang, "Register", "ErrorLastNameTooShort")' + "<br />";
+            hasErrors = true;
+        }
+
+        //      3. checking if the last name uses invalid characters
+        for (var i = lastNameValue.length-1; i >= 0; i--)
+        {
+            if (validCharactersFirstName.indexOf(lastNameValue.substr(i, 1)) == -1)
+            {
+                errorTextLastName += '@LanguageController.Get(Model.lang, "Register", "ErrorLastNameInvalidCharacter")' + "<br />";
+                hasErrors = true;
+                break;
+            }
+        }
+
+        // _____________________________________________________________________________________
+        //      1. checking if the username is empty
+        if (usernameValue == "")
+        {
+            errorTextUsername += '@LanguageController.Get(Model.lang, "Register", "ErrorUsernameEmpty")' + "<br />";
+            hasErrors = true;
+        }
+
+        //      2. checking if the username is at least 3 characters long
+        else if (3 > usernameValue.length)
+        {
+            errorTextUsername += '@LanguageController.Get(Model.lang, "Register", "ErrorUsernameTooShort")' + "<br />";
+            hasErrors = true;
+        }
+
+        //      3. checking if the username has more than 30 characters
+        else if (usernameValue.length > 30)
+        {
+            errorTextUsername += '@LanguageController.Get(Model.lang, "Register", "ErrorUsernameTooLong")' + "<br />";
+            hasErrors = true;
+        }
+
+        //      4. checking if the username uses invalid characters
+        var validCharacters = '1234567890-_.abcčćdđefghijklmnopqrsštuvwxyzžABCČĆDĐEFGHIJKLMNOPQRSŠTUVWXYZŽ';
+        for (var i = usernameValue.length-1; i >= 0; i--)
+        {
+            if (validCharacters.indexOf(usernameValue.substr(i, 1)) == -1)
+            {
+                errorTextUsername += '@LanguageController.Get(Model.lang, "Register", "ErrorUsernameInvalidCharacter")' + "<br />";
+                hasErrors = true;
+                break;
+            }
+        }
+
+        //      5. checking if the username has consecutive dots or dashes
+        for (var i = usernameValue.length-2; i >= 0; i--)
+        {
+            var consError = false;
+            if (usernameValue.charAt(i) == '.')
+            {
+                if (usernameValue.charAt(i + 1) == '.')
+                    consError = true;
+            }
+
+            if (usernameValue.charAt(i) == '-')
+            {
+                if (usernameValue.charAt(i + 1) == '-')
+                    consError = true;
+            }
+
+            if (consError)
+            {
+                errorTextUsername += '@LanguageController.Get(Model.lang, "Register", "ErrorUsernameConsecutiveSymbols")' + "<br />";
+                hasErrors = true;
+                break;
+            }
+
+        }
+
+        // _____________________________________________________________________________________
+        //      1. checking if the password is empty
+        if (passwordValue == "")
+        {
+            errorTextPassword += '@LanguageController.Get(Model.lang, "Register", "ErrorPasswordEmpty")' + "<br />";
+            hasErrors = true;
+        }
+        //      2. checking if the password is at least 6 characters long
+        else if (6 > passwordValue.length)
+        {
+            errorTextPassword += '@LanguageController.Get(Model.lang, "Register", "ErrorPasswordTooShort")' + "<br />";
+            hasErrors = true;
+        }
+        //      3. checking if the password has more than 30 characters
+        else if (passwordValue.length > 30)
+        {
+            errorTextPassword += '@LanguageController.Get(Model.lang, "Register", "ErrorPasswordTooLong")' + "<br />";
+            hasErrors = true;
+        }
+
+
+        // _____________________________________________________________________________________
+        //      1. checking if the date of birth is empty
+        if (dateOfBirthValue == '')
+        {
+            errorTextDateOfBirth += '@LanguageController.Get(Model.lang, "Register", "ErrorDateOfBirthEmpty")' + "<br />";
+            hasErrors = true;
+        }
+
+        // _____________________________________________________________________________________
+        //      1. checking if the phone number uses invalid characters
+        var validCharactersNumber = '0123456789 ';
+        if (phoneNumber != '')
+        {
+            for (var i = phoneNumber.length - 1; i >= 0; i--)
+            {
+                if (validCharactersNumber.indexOf(phoneNumber.substr(i, 1)) == -1)
+                {
+                    errorTextPhoneNumber += '@LanguageController.Get(Model.lang, "Register", "ErrorPhoneNumberInvalidCharacter")' + "<br />";
+                    hasErrors = true;
+                    break;
+                }
+            }
+        }
+
+        // _____________________________________________________________________________________
+        // if there are errors, stay on the page and display them
+        // else - try to log in
+        if (hasErrors)
+        {
+            // first name
+            var errorTextFirstNameLabel = document.createElement("small");
+            errorTextFirstNameLabel.innerHTML = errorTextFirstName;
+            errorTextFirstNameLabel.style.color = "red";
+            errorTextFirstNameLabel.className = "errorMessage";
+
+            var parentFirstName = document.getElementById("inputGroupFirstName");
+            parentFirstName.appendChild(errorTextFirstNameLabel);
+
+            // last name
+            var errorTextLastNameLabel = document.createElement("small");
+            errorTextLastNameLabel.innerHTML = errorTextLastName;
+            errorTextLastNameLabel.style.color = "red";
+            errorTextLastNameLabel.className = "errorMessage";
+
+            var parentLastName = document.getElementById("inputGroupLastName");
+            parentLastName.appendChild(errorTextLastNameLabel);
+
+            // username
+            var errorTextUsernameLabel = document.createElement("small");
+            errorTextUsernameLabel.innerHTML = errorTextUsername;
+            errorTextUsernameLabel.style.color = "red";
+            errorTextUsernameLabel.className = "errorMessage";
+
+            var parentUsername = document.getElementById("inputGroupUsername");
+            parentUsername.appendChild(errorTextUsernameLabel);
+
+            // password
+            var errorTextPasswordLabel = document.createElement("small");
+            errorTextPasswordLabel.innerHTML = errorTextPassword;
+            errorTextPasswordLabel.style.color = "red";
+            errorTextPasswordLabel.className = "errorMessage";
+
+            var parentPassword = document.getElementById("inputGroupPassword");
+            parentPassword.appendChild(errorTextPasswordLabel);
+
+            // date of birth
+            var errorTextDateOfBirthLabel = document.createElement("small");
+            errorTextDateOfBirthLabel.innerHTML = errorTextDateOfBirth;
+            errorTextDateOfBirthLabel.style.color = "red";
+            errorTextDateOfBirthLabel.className = "errorMessage";
+
+            var parentDateOfBirth = document.getElementById("inputGroupDateOfBirth");
+            parentDateOfBirth.appendChild(errorTextDateOfBirthLabel);
+
+            // phone number
+            var errorTextPhoneNumberLabel = document.createElement("small");
+            errorTextPhoneNumberLabel.innerHTML = errorTextPhoneNumber;
+            errorTextPhoneNumberLabel.style.color = "red";
+            errorTextPhoneNumberLabel.className = "errorMessage";
+
+            var parentPhoneNumber = document.getElementById("inputGroupPhoneNumber");
+            parentPhoneNumber.appendChild(errorTextPhoneNumberLabel);
+
+            document.getElementById('inputHasErrors').value = true;
+            event.preventDefault();
+
+            // remove loading animation
+            btn.innerHTML = '@LanguageController.Get(Model.lang, "Register", "Register")';
+            btn.querySelectorAll('*').forEach(child => child.remove());
+        }
+    }
+        </text>
+                }
+
+    function displayErrorMessages(messages)
+    {
+        var errorTexts = messages.split('`');
+        errorTexts.forEach(x =>
+        {
+            if (x.includes("first") || x.includes("&quot;ime&quot;"))
+            {
+                var errorText = document.createElement("small");
+                errorText.innerHTML = x;
+                errorText.style.color = "red";
+                errorText.className = "errorMessage";
+
+                var parent = document.getElementById("inputGroupFirstName");
+                parent.appendChild(errorText);
+            }
+            else if (x.includes("last") || x.includes("prezime"))
+            {
+                var errorText = document.createElement("small");
+                errorText.innerHTML = x;
+                errorText.style.color = "red";
+                errorText.className = "errorMessage";
+
+                var parent = document.getElementById("inputGroupLastName");
+                parent.appendChild(errorText);
+            }
+            else if (x.includes("username") || x.includes("korisni") ||
+                x.includes("dashes") || x.includes("crtice") ||
+                x.includes("exists") || x.includes("postoji"))
+            {
+                var errorText = document.createElement("small");
+                errorText.innerHTML = x;
+                errorText.style.color = "red";
+                errorText.className = "errorMessage";
+
+                var parent = document.getElementById("inputGroupUsername");
+                parent.appendChild(errorText);
+            }
+            else if (x.includes("password") || x.includes("ifra"))
+            {
+                var errorText = document.createElement("small");
+                errorText.innerHTML = x;
+                errorText.style.color = "red";
+                errorText.className = "errorMessage";
+
+                var parent = document.getElementById("inputGroupPassword");
+                parent.appendChild(errorText);
+            }
+            else if (x.includes("birth") || x.includes("enja"))
+            {
+                var errorText = document.createElement("small");
+                errorText.innerHTML = x;
+                errorText.style.color = "red";
+                errorText.className = "errorMessage";
+
+                var parent = document.getElementById("inputGroupDateOfBirth");
+                parent.appendChild(errorText);
+            }
+            else if (x.includes("spaces") || x.includes("razmaci"))
+            {
+                var errorText = document.createElement("small");
+                errorText.innerHTML = x;
+                errorText.style.color = "red";
+                errorText.className = "errorMessage";
+
+                var parent = document.getElementById("inputGroupPhoneNumber");
+                parent.appendChild(errorText);
+            }
+        });
+    }
+</script>

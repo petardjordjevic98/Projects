@@ -1,0 +1,203 @@
+﻿@page
+@using ProbCut.Models;
+@using System.Text;
+@model LoginModel
+@{
+    ViewData["Title"] = LanguageController.Get(Model.lang, "Login", "Title");
+}
+
+<link rel="stylesheet" href="~/css/LoginRegister.css" asp-append-version="true" />
+<div id="rcorners" style="margin-top: 200px; margin-bottom: 200px;">
+    <form method="post" id="formLogin">
+        <div id="formNameLogin">
+            <label>@LanguageController.Get(Model.lang, "Login", "LoginLabel")</label>
+        </div>
+        <hr id="formSeparator" />
+        <input type="hidden" id="inputHasErrors" asp-for="hasErrors" />
+        <div class="form-group" id="inputGroupUsername">
+            <label>@LanguageController.Get(Model.lang, "Login", "Username")</label>
+            <input type="text" class="form-control" id="inputUsername"
+                   aria-describedby="emailHelp" asp-for="username">
+        </div>
+        <div class="form-group" id="inputGroupPassword">
+            <label>@LanguageController.Get(Model.lang, "Login", "Password")</label>
+            <input type="password" class="form-control" id="inputPassword"
+                   asp-for="password">
+        </div>
+        <div class="form-group" id="formGroupRegisterHere">
+            <a href="./Register" id="ClickHereToRegister">@LanguageController.Get(Model.lang, "Login", "NotAMember")</a>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="validate()" id="buttonLogin">@LanguageController.Get(Model.lang, "Login", "Login")</button>
+    </form>
+</div>
+
+<script type="text/javascript">
+    @{
+        <text>
+            displayErrorMessages('@Model.errorMessages');
+
+    function validate()
+    {
+        // generate loading animation
+        let btn = document.getElementById('buttonLogin');
+        btn.innerHTML = '';
+        btn.style.display = 'flex';
+        btn.style.justifyContent = 'center';
+
+        let animation = document.createElement('span');
+        animation.className = 'spinner-border spinner-border-sm';
+        animation.id = 'loginAnimation';
+        btn.appendChild(animation);
+        btn.style.height = '38px';
+
+        // client-side data validation
+
+        // removing previous error texts
+        $('.errorMessage').remove();
+
+        // displaying errors if they exist
+        var hasErrors = false;
+        document.getElementById('inputHasErrors').value = false;
+        var usernameValue = document.getElementById("inputUsername").value;
+        var passwordValue = document.getElementById("inputPassword").value;
+        var errorTextUsername = "";
+        var errorTextPassword = "";
+
+        //      1. checking if the username is empty
+        if (usernameValue == "")
+        {
+            errorTextUsername += '@LanguageController.Get(Model.lang, "Login", "ErrorUsernameEmpty")' + "<br />";
+            hasErrors = true;
+        }
+
+        //      2. checking if the username is at least 3 characters long
+        else if (3 > usernameValue.length)
+        {
+            errorTextUsername += '@LanguageController.Get(Model.lang, "Login", "ErrorUsernameTooShort")' + "<br />";
+            hasErrors = true;
+        }
+
+        //      3. checking if the username has more than 30 characters
+        else if (usernameValue.length > 30)
+        {
+            errorTextUsername += '@LanguageController.Get(Model.lang, "Login", "ErrorUsernameTooLong")' + "<br />";
+            hasErrors = true;
+        }
+
+        //      4. checking if the username uses invalid characters
+        var validCharacters = '1234567890-_.abcčćdđefghijklmnopqrsštuvwxyzžABCČĆDĐEFGHIJKLMNOPQRSŠTUVWXYZŽ';
+        for (var i = usernameValue.length-1; i >= 0; i--)
+        {
+            if (validCharacters.indexOf(usernameValue.substr(i, 1)) == -1)
+            {
+                errorTextUsername += '@LanguageController.Get(Model.lang, "Login", "ErrorUsernameInvalidCharacter")' + "<br />";
+                hasErrors = true;
+                break;
+            }
+        }
+
+        //      5. checking if the username has consecutive dots or dashes
+        for (var i = usernameValue.length-2; i >= 0; i--)
+        {
+            var consError = false;
+            if (usernameValue.charAt(i) == '.')
+            {
+                if (usernameValue.charAt(i + 1) == '.')
+                    consError = true;
+            }
+
+            if (usernameValue.charAt(i) == '-')
+            {
+                if (usernameValue.charAt(i + 1) == '-')
+                    consError = true;
+            }
+
+            if (consError)
+            {
+                errorTextUsername += '@LanguageController.Get(Model.lang, "Login", "ErrorUsernameConsecutiveSymbols")' + "<br />";
+                hasErrors = true;
+                break;
+            }
+
+        }
+
+        // _____________________________________________________________________________________
+        //      1. checking if the password is empty
+        if (passwordValue == "")
+        {
+            errorTextPassword += '@LanguageController.Get(Model.lang, "Login", "ErrorPasswordEmpty")' + "<br />";
+            hasErrors = true;
+        }
+        //      2. checking if the password is at least 6 characters long
+        else if (6 > passwordValue.length)
+        {
+            errorTextPassword += '@LanguageController.Get(Model.lang, "Login", "ErrorPasswordTooShort")' + "<br />";
+            hasErrors = true;
+        }
+        //      3. checking if the password has more than 30 characters
+        else if (passwordValue.length > 30)
+        {
+            errorTextPassword += '@LanguageController.Get(Model.lang, "Login", "ErrorPasswordTooLong")' + "<br />";
+            hasErrors = true;
+        }
+
+        // _____________________________________________________________________________________
+        // if there are errors, stay on the page and display them
+        // else - try to log in
+        if (hasErrors)
+        {
+            var errorTextUsernameLabel = document.createElement("small");
+            errorTextUsernameLabel.innerHTML = errorTextUsername;
+            errorTextUsernameLabel.style.color = "red";
+            errorTextUsernameLabel.className = "errorMessage";
+
+            var parentUsername = document.getElementById("inputGroupUsername");
+            parentUsername.appendChild(errorTextUsernameLabel);
+
+            var errorTextPasswordLabel = document.createElement("small");
+            errorTextPasswordLabel.innerHTML = errorTextPassword;
+            errorTextPasswordLabel.style.color = "red";
+            errorTextPasswordLabel.className = "errorMessage";
+
+            var parentPassword = document.getElementById("inputGroupPassword");
+            parentPassword.appendChild(errorTextPasswordLabel);
+
+            document.getElementById('inputHasErrors').value = true;
+            event.preventDefault();
+
+            // remove loading animation
+            btn.innerHTML = '@LanguageController.Get(Model.lang, "Login", "Login")';
+            btn.querySelectorAll('*').forEach(child => child.remove());
+        }
+    }
+        </text>
+                }
+
+    function displayErrorMessages(messages)
+    {
+        var errorTexts = messages.split('`');
+        errorTexts.forEach(x =>
+        {
+            if (x.includes("username") || x.includes("ime") || x.includes("Invalid") || x.includes("Nedozvoljen"))
+            {
+                var errorText = document.createElement("small");
+                errorText.innerHTML = x;
+                errorText.style.color = "red";
+                errorText.className = "errorMessage";
+
+                var parent = document.getElementById("inputGroupUsername");
+                parent.appendChild(errorText);
+            }
+            else if (x.includes("password") || x.includes("ifra"))
+            {
+                var errorText = document.createElement("small");
+                errorText.innerHTML = x;
+                errorText.style.color = "red";
+                errorText.className = "errorMessage";
+
+                var parent = document.getElementById("inputGroupPassword");
+                parent.appendChild(errorText);
+            }
+        });
+    }
+</script>
